@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> MANNY MEDIA</title>
+        <link rel="stylesheet" href="Css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <link rel="stylesheet" href="Css/contact.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+   <!--manny icon-->
+        <link rel="shortcut icon" href="logo2.PNG" />
+
+    </head>
+
+    <body> 
+        <!--navigation-->    
+            <nav>
+                <!--logo-->
+                <a href="#" class="logo"> 
+                    <img src="logo2.PNG"/>
+                </a>
+
+                <!--menu-->
+               <ul class="menu">
+                 <li><a href="index.html" class="active">HOME</a></li>
+                 <li><a href="book.html">BOOK</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="#overlay">CONTACT</a></li>
+
+               </ul> 
+            </nav>
+            
+            <!--showcase-->
+            
+        <h1 class="showcase-heading">Instagram Feed</h1>
+
+        <section  id="showcase">
+                <!--heading-->
+                <h1 class="showcase-heading">Instagram Feed</h1>
+            <div id="instafeed-container" style="margin:center"></div>
+
+	        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	        <script type="text/javascript" src="script.js"></script>
+	
+            </section>
+           
+            <!--CONTACT-->          
+
+            <div id="overlay">
+      <h1>Contact Us</h1>
+               <form name="contact-form">
+      <div class="form-control">
+        <label>Full Name</label>
+        <input name="name"
+          placeholder="First and Last Name" />
+        <div class="error hide">Name is required</div>
+      </div>
+
+      <div class="form-control">
+        <label>Email</label>
+        <input
+          name="email"
+          placeholder="e.g. your_email@example.com"
+        />
+        <div class="error hide">Email is invalid</div>
+      </div>
+
+      <div class="form-control">
+        <label>Phone</label>
+        <input name="phone"
+        ></input>
+        <div class="error hide">Phone is invalid</div>
+      </div>
+
+      <div class="form-control">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <div class="error hide">Message is required</div>
+      </div>
+
+      <hr />
+
+      <button type="submit">SUBMIT FORM</button>
+    </form>
+
+    <script src="javaScrpt/index.js"></script>
+
+
+             <section  id="insta-feed">
+                <!--heading-->
+
+	        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	        <script type="text/javascript" src="javaScrpt/script.js"></script>
+		
+
+            <a href="https://www.instagram.com/iammannymedia/" style="text-decoration:none;color:#000000;">	
+		    <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+		    </p>	
+            </section>
+          
+    </body>
+
+</html> 

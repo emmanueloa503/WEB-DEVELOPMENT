@@ -1,0 +1,359 @@
+body {
+        
+        margin: 0;
+        padding: 0px;
+        font-family: poppins;
+        background-color: rgba(151,151,151,0.03);
+        background-image: url("logo.png") !important;  
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, 250px 250px;
+}
+
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    
+}
+.logo img{
+    height: 180px;
+    width: 180px;
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px; 
+}
+
+nav .menu li a:hover,
+ .active{
+    background-color: #242424;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(53,53,53,0.01);
+    transition: all ease 0.25;
+}
+
+#main{
+    padding-top: 80px;
+    /*background-color: #ffffff;*/
+}
+
+#showcase{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 7% 20px 2%;
+
+}
+.showcase-heading{
+    font-family: poppins;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: 500;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.showcase-box{
+
+    box-shadow:5px 15px 30px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.showcase-box-container{
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    filter: gray;
+    filter: grayscale(100%);
+}
+
+.showcase-box-container:hover{
+    filter: gray;
+    filter: grayscale(0%);
+    display: flex;
+}
+
+.text-overlay{
+    font-family: poppins;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+}
+.text-overlay h1{
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+}
+
+.showcase-box:hover .text-overlay{
+    display: flex;
+
+}
+.showcase-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 5% 0px 5%; 
+    
+
+}
+.about-text{
+    font-family: poppins;
+    width: 50%;   
+    
+}
+.about-text h1{
+    font-size: 5rem;
+    color: #000000;
+}
+.about-text h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.about-text h1, h2{
+    margin: 0px;
+    padding: 0px;    
+}
+.about-text p, div{
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.9);
+    
+}
+.about-model img{
+    position: relative;
+    display: flex;
+    height: 400px;
+
+}
+
+#book{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 5% 0px 5%; 
+    font-size: 2rem;   
+}
+
+@media(max-width:1190px){
+    #main{
+        background-size: 1150px;
+    }
+    .name{
+        left: 10%;
+        top: 50%;
+        transform: translate(-10%, -50%);
+    }
+    .about-model img{
+        height: 400px;
+    }
+    #contact-form form{
+        width: 95% !important;
+    }
+}
+@media(max-width: 970px){
+    #main{
+        background-image: url("logo.png") !important;
+    }
+        .name{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    .about-model{
+        display: none;
+    }
+    #about{
+        justify-content: center;
+        padding: 0px;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-text h1{
+        font-size: 4rem;
+    }
+    .showcase-box-container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px){
+    
+}
+
+#insta-feed{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 7% 20px 2%;
+
+}
+
+a img{ 
+width: 	30.5%;                     
+border-radius: 10px;
+background-size: cover;
+filter: grayscale(100%);
+transition: 0.1s all;
+}
+
+a img:hover{
+    filter: grayscale(0%);
+   
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: center;
+  
+    
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: black;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing:border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.9) rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: green;
+}
+
+
+
+
+
+
+
+
