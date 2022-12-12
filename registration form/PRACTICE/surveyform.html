@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta Charset="utf-8">
+    <!--title-->
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">MANNY MEDIA SURVEY FORM</h1>
+    
+    <p id="description">
+      Thank you for taking the time to talk with us</p>
+
+      <form id="survey-form">
+  
+        <!--Name-->
+      <label id="name-label">
+        Name
+        <input id="name" type="text" placeholder="name" required/>
+      </label>  
+        
+      <!--Email-->
+      <label  id="email-label">
+        Email
+        <input id="email" type="email" placeholder="email" required/>
+      </label>
+      
+       <!--Number-->     
+      <label id="number-label">
+        Number
+        <input id="number" type="number" min="0" max="130" placeholder="number"/>
+      </label>
+     
+
+
+    <!--options--> 
+    <label id="dropdown-label">
+      Options
+     <select id="dropdown">
+       <option></option>
+       <option></option>
+     </select>
+    </label> 
+
+    <!--radio buttons-->
+    <label for="radio">
+      radio buttons
+      <input id="radio" type="radio" name="account-type" value="1"/>
+      <input id="radio" type="radio" name="account-type" value="2"/>
+    </label>
+
+    <label for="checkbox">
+      checkboxes
+    <input id="checkbox" type="checkbox" value="1"/>
+    <input id="checkbox" type="checkbox" value="2"/>
+    <input id="checkbox" type="checkbox" value="3"/>
+    <input id="checkbox" type="checkbox" value="4"/>
+    </label>
+ 
+   
+ 
+    <label for="textarea">
+      Additional comments
+      <textarea id="textarea"></textarea>
+    </label>
+  </fieldset>
+
+ <label for="submit">
+   <input id="submit" type="submit"/>
+ </label>
+
+      </form>
+      
+     
+
+  </body>
+</html>
